@@ -1,0 +1,163 @@
+{
+    "name": {
+        "name": "CustomerOrderMetadata-1_public",
+        "dataCatalogName": "urn:li:dataset:postgres:CustomerOrderMetadata-1_public"
+    },
+    "dataSets": [
+        {
+            "name": {
+                "name": "customers",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_1:public:dataset:customers"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "customer_id",
+                        "dataCatalogName": "customer_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "first_name",
+                        "dataCatalogName": "first_name"
+                    },
+                    "type": "VARCHAR(50)",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "last_name",
+                        "dataCatalogName": "last_name"
+                    },
+                    "type": "VARCHAR(50)",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "email",
+                        "dataCatalogName": "email"
+                    },
+                    "type": "VARCHAR(100)",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": true,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "created_at",
+                        "dataCatalogName": "created_at"
+                    },
+                    "type": "TIMESTAMP",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": []
+        },
+        {
+            "name": {
+                "name": "orders",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_1:public:dataset:orders"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "order_id",
+                        "dataCatalogName": "order_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "customer_id",
+                        "dataCatalogName": "customer_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "order_date",
+                        "dataCatalogName": "order_date"
+                    },
+                    "type": "DATE",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "total_amount",
+                        "dataCatalogName": "total_amount"
+                    },
+                    "type": "NUMERIC(10, 2)",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_orders_customer_id_to_customers",
+                        "dataCatalogName": "FK_orders_customer_id_to_customers"
+                    },
+                    "sourceDataset": {
+                        "name": "orders",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_1:public:dataset:orders"
+                    },
+                    "targetDataset": {
+                        "name": "customers",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_1:public:dataset:customers"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "customer_id",
+                            "dataCatalogName": "customer_id"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "customer_id",
+                            "dataCatalogName": "customer_id"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

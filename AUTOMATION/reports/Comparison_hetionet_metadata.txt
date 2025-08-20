@@ -1,0 +1,18 @@
+JSON Comparison Report
+==================================================
+
+Metrics:
+- Number of datasets (Golden Metadata): 36
+- Number of datasets (New Metadata): 36
+- Number of properties (Golden Metadata): 385
+- Number of properties (New Metadata): 384
+- Number of relationships (Golden Metadata): 48
+- Number of relationships (New Metadata): 48
+- Number of extra properties: 0
+- Number of extra datasets: 0
+- Number of extra relationships: 0
+- Number of missing values: 2
+
+Differences found between correct and incorrect JSON:
+- Property 'created_at' in dataset 'pharmacologic_classes', nullable mismatch: Correct_value=True, current_value=False
+- Property 'external_identifier' missing in dataset 'pathways' of newly generated metadata JSON

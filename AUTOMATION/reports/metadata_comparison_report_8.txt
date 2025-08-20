@@ -1,0 +1,17 @@
+JSON Comparison Report
+==================================================
+
+Metrics:
+- Number of datasets (Golden Metadata): 1
+- Number of datasets (New Metadata): 1
+- Number of properties (Golden Metadata): 4
+- Number of properties (New Metadata): 3
+- Number of relationships (Golden Metadata): 1
+- Number of relationships (New Metadata): 1
+- Number of extra properties: 0
+- Number of extra datasets: 0
+- Number of extra relationships: 0
+- Number of missing values: 1
+
+Differences found between correct and incorrect JSON:
+- Property 'employee_id' missing in dataset 'employees' of newly generated metadata JSON

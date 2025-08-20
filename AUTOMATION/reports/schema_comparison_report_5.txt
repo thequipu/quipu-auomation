@@ -1,0 +1,41 @@
+Schema JSON Comparison Report
+==================================================
+
+Node Metrics:
+- count_datasource: 0
+- count_tables: 2
+- count_property: 9
+- count_nodes: 24
+- count_node_property: 0
+- count_node_relationship: 0
+- count_extra_datasource: 0
+- count_extra_tables: 0
+- count_extra_property: 0
+- count_extra_nodes: 0
+- count_extra_node_property: 0
+- count_extra_node_relationship: 0
+
+Link Metrics:
+- count_has_tables: 0
+- count_has_property: 9
+- count_foreign_key: 0
+- count_maps_to_target_node_property: 1
+- count_composite_column: 0
+- count_has_node_relationship: 1
+- count_maps_to_column: 9
+- count_maps_to_foreign_key_column: 1
+- count_extra_has_tables: 0
+- count_extra_has_property: 0
+- count_extra_foreign_key: 0
+- count_extra_maps_to_target_node_property: 0
+- count_extra_composite_column: 0
+- count_extra_has_node_relationship: 0
+- count_extra_maps_to_column: 0
+- count_extra_maps_to_foreign_key_column: 0
+
+Missing Values Count: 3
+
+Differences found between correct and incorrect schema JSON:
+- Node 'urn:li:dataset:postgres:automation_test_5:public:dataset:customers:created_at' missing in incorrect JSON
+- Link from 'urn:li:dataset:postgres:CustomerOrderMetadata-5_public' to 'urn:li:dataset:postgres:automation_test_5:public:dataset:orders' with relationship 'has_tables' missing in incorrect JSON
+- Link from 'urn:li:dataset:postgres:automation_test_5:public:dataset:orders:customer_email' to 'urn:li:dataset:postgres:automation_test_5:public:dataset:customers:email' with relationship 'Foreign_Key' missing in incorrect JSON

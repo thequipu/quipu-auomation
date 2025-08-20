@@ -1,0 +1,1963 @@
+{
+    "name": {
+        "name": "AutomationTestMetadata_0_public",
+        "dataCatalogName": "urn:li:dataset:postgres:AutomationTestMetadata_0_public"
+    },
+    "dataSets": [
+        {
+            "name": {
+                "name": "movie",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:movies"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "movie_id",
+                        "dataCatalogName": "movie_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "title",
+                        "dataCatalogName": "title"
+                    },
+                    "type": "VARCHAR(100)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": []
+        },
+        {
+            "name": {
+                "name": "movieactor",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:movieactor"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "movie_id",
+                        "dataCatalogName": "movie_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "actor_id",
+                        "dataCatalogName": "actor_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "role_name",
+                        "dataCatalogName": "role_name"
+                    },
+                    "type": "VARCHAR(50)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "movieactor_CompositePK",
+                        "dataCatalogName": "movieactor_CompositePK"
+                    },
+                    "type": "compositeKey",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": null,
+                    "compositeKey": true,
+                    "compositeKeyColumns": [
+                        "movie_id",
+                        "actor_id"
+                    ]
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_movieactor_actor_id_to_actor",
+                        "dataCatalogName": "FK_movieactor_actor_id_to_actor"
+                    },
+                    "sourceDataset": {
+                        "name": "movieactor",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:movieactor"
+                    },
+                    "targetDataset": {
+                        "name": "actor",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:actor"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "actor_id",
+                            "dataCatalogName": "actor_id"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "actor_id",
+                            "dataCatalogName": "actor_id"
+                        }
+                    ]
+                },
+                {
+                    "relationshipName": {
+                        "name": "FK_movieactor_movie_id_to_movie",
+                        "dataCatalogName": "FK_movieactor_movie_id_to_movie"
+                    },
+                    "sourceDataset": {
+                        "name": "movieactor",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:movieactor"
+                    },
+                    "targetDataset": {
+                        "name": "movie",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:movie"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "movie_id",
+                            "dataCatalogName": "movie_id"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "movie_id",
+                            "dataCatalogName": "movie_id"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "actor",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:actor"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "actor_id",
+                        "dataCatalogName": "actor_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "actor_name",
+                        "dataCatalogName": "actor_name"
+                    },
+                    "type": "VARCHAR(50)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": []
+        },
+        {
+            "name": {
+                "name": "person",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:person"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "person_id",
+                        "dataCatalogName": "person_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "name",
+                        "dataCatalogName": "name"
+                    },
+                    "type": "VARCHAR(50)",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "email",
+                        "dataCatalogName": "email"
+                    },
+                    "type": "VARCHAR(100)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": true,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": []
+        },
+        {
+            "name": {
+                "name": "employee",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:employee"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "emp_id",
+                        "dataCatalogName": "emp_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "manager_id",
+                        "dataCatalogName": "manager_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_employee_manager_id_to_person",
+                        "dataCatalogName": "FK_employee_manager_id_to_person"
+                    },
+                    "sourceDataset": {
+                        "name": "employee",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:employee"
+                    },
+                    "targetDataset": {
+                        "name": "person",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:person"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "manager_id",
+                            "dataCatalogName": "manager_id"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "person_id",
+                            "dataCatalogName": "person_id"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "projectassignment",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:projectassignment"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "assignment_id",
+                        "dataCatalogName": "assignment_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "person_ref",
+                        "dataCatalogName": "person_ref"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "dept_code",
+                        "dataCatalogName": "dept_code"
+                    },
+                    "type": "VARCHAR(20)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_projectassignment_person_ref_to_person",
+                        "dataCatalogName": "FK_projectassignment_person_ref_to_person"
+                    },
+                    "sourceDataset": {
+                        "name": "projectassignment",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:projectassignment"
+                    },
+                    "targetDataset": {
+                        "name": "person",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:person"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "person_ref",
+                            "dataCatalogName": "person_ref"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "person_id",
+                            "dataCatalogName": "person_id"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "department",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:department"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "dept_id",
+                        "dataCatalogName": "dept_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "branch_id",
+                        "dataCatalogName": "branch_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "dept_name",
+                        "dataCatalogName": "dept_name"
+                    },
+                    "type": "VARCHAR(50)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "department_CompositePK",
+                        "dataCatalogName": "department_CompositePK"
+                    },
+                    "type": "compositeKey",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": null,
+                    "compositeKey": true,
+                    "compositeKeyColumns": [
+                        "dept_id",
+                        "branch_id"
+                    ]
+                }
+            ],
+            "dataSetRelationShips": []
+        },
+        {
+            "name": {
+                "name": "deptemployee",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:deptemployee"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "dept_id",
+                        "dataCatalogName": "dept_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "branch_id",
+                        "dataCatalogName": "branch_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "emp_no",
+                        "dataCatalogName": "emp_no"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "deptemployee_CompositePK",
+                        "dataCatalogName": "deptemployee_CompositePK"
+                    },
+                    "type": "compositeKey",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": null,
+                    "compositeKey": true,
+                    "compositeKeyColumns": [
+                        "dept_id",
+                        "branch_id",
+                        "emp_no"
+                    ]
+                },
+                {
+                    "name": {
+                        "name": "deptemployee.dept_id-branch_id_CompositeFK",
+                        "dataCatalogName": "deptemployee.dept_id-branch_id_CompositeFK"
+                    },
+                    "type": "compositeKey",
+                    "nullable": false,
+                    "primaryKey": null,
+                    "uniqueKey": null,
+                    "compositeKey": true,
+                    "compositeKeyColumns": [
+                        "dept_id",
+                        "branch_id"
+                    ]
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_deptemployee_dept_id_branch_id_to_department",
+                        "dataCatalogName": "FK_deptemployee_dept_id_branch_id_to_department"
+                    },
+                    "sourceDataset": {
+                        "name": "deptemployee",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:deptemployee"
+                    },
+                    "targetDataset": {
+                        "name": "department",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:department"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "deptemployee.dept_id-branch_id_CompositeFK",
+                            "dataCatalogName": "deptemployee.dept_id-branch_id_CompositeFK"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "department_CompositePK",
+                            "dataCatalogName": "department_CompositePK"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "branch",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:branch"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "branch_id",
+                        "dataCatalogName": "branch_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "branch_name",
+                        "dataCatalogName": "branch_name"
+                    },
+                    "type": "VARCHAR(50)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": []
+        },
+        {
+            "name": {
+                "name": "branchdeptnote",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:branchdeptnote"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "dept_id",
+                        "dataCatalogName": "dept_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "branch_id",
+                        "dataCatalogName": "branch_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "note",
+                        "dataCatalogName": "note"
+                    },
+                    "type": "TEXT",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_branchdeptnote_branch_id_to_branch",
+                        "dataCatalogName": "FK_branchdeptnote_branch_id_to_branch"
+                    },
+                    "sourceDataset": {
+                        "name": "branchdeptnote",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:branchdeptnote"
+                    },
+                    "targetDataset": {
+                        "name": "branch",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:branch"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "branch_id",
+                            "dataCatalogName": "branch_id"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "branch_id",
+                            "dataCatalogName": "branch_id"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "customer",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:customer"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "customer_id",
+                        "dataCatalogName": "customer_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "customer_code",
+                        "dataCatalogName": "customer_code"
+                    },
+                    "type": "VARCHAR(20)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": true,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": []
+        },
+        {
+            "name": {
+                "name": "customerorder",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:customerorder"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "order_id",
+                        "dataCatalogName": "order_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "customer_code",
+                        "dataCatalogName": "customer_code"
+                    },
+                    "type": "VARCHAR(20)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_customerorder_customer_code_to_customer",
+                        "dataCatalogName": "FK_customerorder_customer_code_to_customer"
+                    },
+                    "sourceDataset": {
+                        "name": "customerorder",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:customerorder"
+                    },
+                    "targetDataset": {
+                        "name": "customer",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:customer"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "customer_code",
+                            "dataCatalogName": "customer_code"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "customer_code",
+                            "dataCatalogName": "customer_code"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "profile",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:profile"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "person_id",
+                        "dataCatalogName": "person_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "bio",
+                        "dataCatalogName": "bio"
+                    },
+                    "type": "TEXT",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_profile_person_id_to_person",
+                        "dataCatalogName": "FK_profile_person_id_to_person"
+                    },
+                    "sourceDataset": {
+                        "name": "profile",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:profile"
+                    },
+                    "targetDataset": {
+                        "name": "person",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:person"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "person_id",
+                            "dataCatalogName": "person_id"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "person_id",
+                            "dataCatalogName": "person_id"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "course",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:course"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "course_id",
+                        "dataCatalogName": "course_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "semester_id",
+                        "dataCatalogName": "semester_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "course_name",
+                        "dataCatalogName": "course_name"
+                    },
+                    "type": "VARCHAR(50)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "course_CompositePK",
+                        "dataCatalogName": "course_CompositePK"
+                    },
+                    "type": "compositeKey",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": null,
+                    "compositeKey": true,
+                    "compositeKeyColumns": [
+                        "course_id",
+                        "semester_id"
+                    ]
+                }
+            ],
+            "dataSetRelationShips": []
+        },
+        {
+            "name": {
+                "name": "courseschedule",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:courseschedule"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "course_id",
+                        "dataCatalogName": "course_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "semester_id",
+                        "dataCatalogName": "semester_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "schedule_time",
+                        "dataCatalogName": "schedule_time"
+                    },
+                    "type": "VARCHAR(50)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "courseschedule_CompositePK",
+                        "dataCatalogName": "courseschedule_CompositePK"
+                    },
+                    "type": "compositeKey",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": null,
+                    "compositeKey": true,
+                    "compositeKeyColumns": [
+                        "course_id",
+                        "semester_id"
+                    ]
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_courseschedule_course_id_semester_id_to_course",
+                        "dataCatalogName": "FK_courseschedule_course_id_semester_id_to_course"
+                    },
+                    "sourceDataset": {
+                        "name": "courseschedule",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:courseschedule"
+                    },
+                    "targetDataset": {
+                        "name": "course",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:course"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "courseschedule_CompositePK",
+                            "dataCatalogName": "courseschedule_CompositePK"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "course_CompositePK",
+                            "dataCatalogName": "course_CompositePK"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "category",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:category"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "category_id",
+                        "dataCatalogName": "category_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "category_name",
+                        "dataCatalogName": "category_name"
+                    },
+                    "type": "VARCHAR(50)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "parent_category_id",
+                        "dataCatalogName": "parent_category_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_category_parent_category_id_to_category",
+                        "dataCatalogName": "FK_category_parent_category_id_to_category"
+                    },
+                    "sourceDataset": {
+                        "name": "category",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:category"
+                    },
+                    "targetDataset": {
+                        "name": "category",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:category"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "parent_category_id",
+                            "dataCatalogName": "parent_category_id"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "category_id",
+                            "dataCatalogName": "category_id"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "location",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:location"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "loc_id",
+                        "dataCatalogName": "loc_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "zone_id",
+                        "dataCatalogName": "zone_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "loc_name",
+                        "dataCatalogName": "loc_name"
+                    },
+                    "type": "VARCHAR(50)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "parent_loc_id",
+                        "dataCatalogName": "parent_loc_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "parent_zone_id",
+                        "dataCatalogName": "parent_zone_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "location_CompositePK",
+                        "dataCatalogName": "location_CompositePK"
+                    },
+                    "type": "compositeKey",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": null,
+                    "compositeKey": true,
+                    "compositeKeyColumns": [
+                        "loc_id",
+                        "zone_id"
+                    ]
+                },
+                {
+                    "name": {
+                        "name": "location.parent_loc_id-parent_zone_id_CompositeFK",
+                        "dataCatalogName": "location.parent_loc_id-parent_zone_id_CompositeFK"
+                    },
+                    "type": "compositeKey",
+                    "nullable": false,
+                    "primaryKey": null,
+                    "uniqueKey": null,
+                    "compositeKey": true,
+                    "compositeKeyColumns": [
+                        "parent_loc_id",
+                        "parent_zone_id"
+                    ]
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_location_parent_loc_id_parent_zone_id_to_location",
+                        "dataCatalogName": "FK_location_parent_loc_id_parent_zone_id_to_location"
+                    },
+                    "sourceDataset": {
+                        "name": "location",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:location"
+                    },
+                    "targetDataset": {
+                        "name": "location",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:location"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "location.parent_loc_id-parent_zone_id_CompositeFK",
+                            "dataCatalogName": "location.parent_loc_id-parent_zone_id_CompositeFK"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "location_CompositePK",
+                            "dataCatalogName": "location_CompositePK"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "task",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:task"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "task_id",
+                        "dataCatalogName": "task_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "person_id",
+                        "dataCatalogName": "person_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "dept_id",
+                        "dataCatalogName": "dept_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "branch_id",
+                        "dataCatalogName": "branch_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "task.dept_id-branch_id_CompositeFK",
+                        "dataCatalogName": "task.dept_id-branch_id_CompositeFK"
+                    },
+                    "type": "compositeKey",
+                    "nullable": false,
+                    "primaryKey": null,
+                    "uniqueKey": null,
+                    "compositeKey": true,
+                    "compositeKeyColumns": [
+                        "dept_id",
+                        "branch_id"
+                    ]
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_task_person_id_to_person",
+                        "dataCatalogName": "FK_task_person_id_to_person"
+                    },
+                    "sourceDataset": {
+                        "name": "task",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:task"
+                    },
+                    "targetDataset": {
+                        "name": "person",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:person"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "person_id",
+                            "dataCatalogName": "person_id"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "person_id",
+                            "dataCatalogName": "person_id"
+                        }
+                    ]
+                },
+                {
+                    "relationshipName": {
+                        "name": "FK_task_dept_id_branch_id_to_department",
+                        "dataCatalogName": "FK_task_dept_id_branch_id_to_department"
+                    },
+                    "sourceDataset": {
+                        "name": "task",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:task"
+                    },
+                    "targetDataset": {
+                        "name": "department",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:department"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "task.dept_id-branch_id_CompositeFK",
+                            "dataCatalogName": "task.dept_id-branch_id_CompositeFK"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "department_CompositePK",
+                            "dataCatalogName": "department_CompositePK"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "vendor",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:vendor"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "vendor_id",
+                        "dataCatalogName": "vendor_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "vendor_code",
+                        "dataCatalogName": "vendor_code"
+                    },
+                    "type": "VARCHAR(20)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "country_code",
+                        "dataCatalogName": "country_code"
+                    },
+                    "type": "VARCHAR(5)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "vendor.vendor_code-country_code_CompositeUK",
+                        "dataCatalogName": "vendor.vendor_code-country_code_CompositeUK"
+                    },
+                    "type": "compositeKey",
+                    "nullable": false,
+                    "primaryKey": null,
+                    "uniqueKey": true,
+                    "compositeKey": true,
+                    "compositeKeyColumns": [
+                        "vendor_code",
+                        "country_code"
+                    ]
+                }
+            ],
+            "dataSetRelationShips": []
+        },
+        {
+            "name": {
+                "name": "vendorcontract",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:vendorcontract"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "contract_id",
+                        "dataCatalogName": "contract_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "vendor_code",
+                        "dataCatalogName": "vendor_code"
+                    },
+                    "type": "VARCHAR(20)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "country_code",
+                        "dataCatalogName": "country_code"
+                    },
+                    "type": "VARCHAR(5)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "vendorcontract.vendor_code-country_code_CompositeFK",
+                        "dataCatalogName": "vendorcontract.vendor_code-country_code_CompositeFK"
+                    },
+                    "type": "compositeKey",
+                    "nullable": false,
+                    "primaryKey": null,
+                    "uniqueKey": null,
+                    "compositeKey": true,
+                    "compositeKeyColumns": [
+                        "vendor_code",
+                        "country_code"
+                    ]
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_vendorcontract_vendor_code_country_code_to_vendor",
+                        "dataCatalogName": "FK_vendorcontract_vendor_code_country_code_to_vendor"
+                    },
+                    "sourceDataset": {
+                        "name": "vendorcontract",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:vendorcontract"
+                    },
+                    "targetDataset": {
+                        "name": "vendor",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:vendor"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "vendorcontract.vendor_code-country_code_CompositeFK",
+                            "dataCatalogName": "vendorcontract.vendor_code-country_code_CompositeFK"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "vendor.vendor_code-country_code_CompositeUK",
+                            "dataCatalogName": "vendor.vendor_code-country_code_CompositeUK"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "friendship",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:friendship"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "person_id1",
+                        "dataCatalogName": "person_id1"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "person_id2",
+                        "dataCatalogName": "person_id2"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "friendship_CompositePK",
+                        "dataCatalogName": "friendship_CompositePK"
+                    },
+                    "type": "compositeKey",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": null,
+                    "compositeKey": true,
+                    "compositeKeyColumns": [
+                        "person_id1",
+                        "person_id2"
+                    ]
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_friendship_person_id1_to_person",
+                        "dataCatalogName": "FK_friendship_person_id1_to_person"
+                    },
+                    "sourceDataset": {
+                        "name": "friendship",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:friendship"
+                    },
+                    "targetDataset": {
+                        "name": "person",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:person"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "person_id1",
+                            "dataCatalogName": "person_id1"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "person_id",
+                            "dataCatalogName": "person_id"
+                        }
+                    ]
+                },
+                {
+                    "relationshipName": {
+                        "name": "FK_friendship_person_id2_to_person",
+                        "dataCatalogName": "FK_friendship_person_id2_to_person"
+                    },
+                    "sourceDataset": {
+                        "name": "friendship",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:friendship"
+                    },
+                    "targetDataset": {
+                        "name": "person",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:person"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "person_id2",
+                            "dataCatalogName": "person_id2"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "person_id",
+                            "dataCatalogName": "person_id"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "match",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:match"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "match_id",
+                        "dataCatalogName": "match_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "home_team_id",
+                        "dataCatalogName": "home_team_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "away_team_id",
+                        "dataCatalogName": "away_team_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_match_home_team_id_to_person",
+                        "dataCatalogName": "FK_match_home_team_id_to_person"
+                    },
+                    "sourceDataset": {
+                        "name": "match",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:match"
+                    },
+                    "targetDataset": {
+                        "name": "person",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:person"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "home_team_id",
+                            "dataCatalogName": "home_team_id"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "person_id",
+                            "dataCatalogName": "person_id"
+                        }
+                    ]
+                },
+                {
+                    "relationshipName": {
+                        "name": "FK_match_away_team_id_to_person",
+                        "dataCatalogName": "FK_match_away_team_id_to_person"
+                    },
+                    "sourceDataset": {
+                        "name": "match",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:match"
+                    },
+                    "targetDataset": {
+                        "name": "person",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:person"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "away_team_id",
+                            "dataCatalogName": "away_team_id"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "person_id",
+                            "dataCatalogName": "person_id"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "author",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:author"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "author_id",
+                        "dataCatalogName": "author_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "author_name",
+                        "dataCatalogName": "author_name"
+                    },
+                    "type": "VARCHAR(50)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": []
+        },
+        {
+            "name": {
+                "name": "authorbookpk",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:authorbookpk"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "author_id",
+                        "dataCatalogName": "author_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "book_id",
+                        "dataCatalogName": "book_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "authorbookpk_CompositePK",
+                        "dataCatalogName": "authorbookpk_CompositePK"
+                    },
+                    "type": "compositeKey",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": null,
+                    "compositeKey": true,
+                    "compositeKeyColumns": [
+                        "author_id",
+                        "book_id"
+                    ]
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_authorbookpk_author_id_to_author",
+                        "dataCatalogName": "FK_authorbookpk_author_id_to_author"
+                    },
+                    "sourceDataset": {
+                        "name": "authorbookpk",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:authorbookpk"
+                    },
+                    "targetDataset": {
+                        "name": "author",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:author"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "author_id",
+                            "dataCatalogName": "author_id"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "author_id",
+                            "dataCatalogName": "author_id"
+                        }
+                    ]
+                },
+                {
+                    "relationshipName": {
+                        "name": "FK_authorbookpk_book_id_to_book",
+                        "dataCatalogName": "FK_authorbookpk_book_id_to_book"
+                    },
+                    "sourceDataset": {
+                        "name": "authorbookpk",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:authorbookpk"
+                    },
+                    "targetDataset": {
+                        "name": "book",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:book"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "book_id",
+                            "dataCatalogName": "book_id"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "book_id",
+                            "dataCatalogName": "book_id"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "book",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:book"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "book_id",
+                        "dataCatalogName": "book_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "title",
+                        "dataCatalogName": "title"
+                    },
+                    "type": "VARCHAR(100)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": []
+        },
+        {
+            "name": {
+                "name": "student",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:student"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "student_id",
+                        "dataCatalogName": "student_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "student_name",
+                        "dataCatalogName": "student_name"
+                    },
+                    "type": "VARCHAR(50)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": []
+        },
+        {
+            "name": {
+                "name": "studentclub",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:studentclub"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "student_id",
+                        "dataCatalogName": "student_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "club_id",
+                        "dataCatalogName": "club_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "studentclub_CompositePK",
+                        "dataCatalogName": "studentclub_CompositePK"
+                    },
+                    "type": "compositeKey",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": null,
+                    "compositeKey": true,
+                    "compositeKeyColumns": [
+                        "student_id",
+                        "club_id"
+                    ]
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "FK_studentclub_club_id_to_club",
+                        "dataCatalogName": "FK_studentclub_club_id_to_club"
+                    },
+                    "sourceDataset": {
+                        "name": "studentclub",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:studentclub"
+                    },
+                    "targetDataset": {
+                        "name": "club",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:club"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "club_id",
+                            "dataCatalogName": "club_id"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "club_id",
+                            "dataCatalogName": "club_id"
+                        }
+                    ]
+                },
+                {
+                    "relationshipName": {
+                        "name": "FK_studentclub_student_id_to_student",
+                        "dataCatalogName": "FK_studentclub_student_id_to_student"
+                    },
+                    "sourceDataset": {
+                        "name": "studentclub",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:studentclub"
+                    },
+                    "targetDataset": {
+                        "name": "student",
+                        "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:student"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "student_id",
+                            "dataCatalogName": "student_id"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "student_id",
+                            "dataCatalogName": "student_id"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "name": "club",
+                "dataCatalogName": "urn:li:dataset:postgres:automation_test_0:public:dataset:club"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "club_id",
+                        "dataCatalogName": "club_id"
+                    },
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "primaryKey": true,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                },
+                {
+                    "name": {
+                        "name": "club_name",
+                        "dataCatalogName": "club_name"
+                    },
+                    "type": "VARCHAR(50)",
+                    "nullable": true,
+                    "primaryKey": false,
+                    "uniqueKey": false,
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": []
+        }
+    ]
+}

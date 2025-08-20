@@ -1,0 +1,40 @@
+Schema JSON Comparison Report
+==================================================
+
+Node Metrics:
+- count_datasource: 0
+- count_tables: 3
+- count_property: 8
+- count_nodes: 23
+- count_node_property: 0
+- count_node_relationship: 0
+- count_extra_datasource: 0
+- count_extra_tables: 0
+- count_extra_property: 0
+- count_extra_nodes: 0
+- count_extra_node_property: 0
+- count_extra_node_relationship: 0
+
+Link Metrics:
+- count_has_tables: 0
+- count_has_property: 8
+- count_foreign_key: 0
+- count_maps_to_target_node_property: 2
+- count_composite_column: 2
+- count_has_node_relationship: 2
+- count_maps_to_column: 8
+- count_maps_to_foreign_key_column: 2
+- count_extra_has_tables: 0
+- count_extra_has_property: 0
+- count_extra_foreign_key: 0
+- count_extra_maps_to_target_node_property: 0
+- count_extra_composite_column: 0
+- count_extra_has_node_relationship: 0
+- count_extra_maps_to_column: 0
+- count_extra_maps_to_foreign_key_column: 0
+
+Missing Values Count: 2
+
+Differences found between correct and incorrect schema JSON:
+- Link from 'http://customerorder15NodeRelationship#author_id' to 'urn:li:dataset:postgres:automation_test_15:public:dataset:authorbooks:author_id' with relationship 'maps_to_foreign_key_column' missing in incorrect JSON
+- Link from 'http://customerorder15NodeRelationship#author_id' to 'http://customerorder15Node#authors' with relationship 'author_id' prefLabel mismatch: Correct=False, Incorrect=True

@@ -1,0 +1,17 @@
+JSON Comparison Report
+==================================================
+
+Metrics:
+- Number of datasets (Golden Metadata): 3
+- Number of datasets (New Metadata): 3
+- Number of properties (Golden Metadata): 10
+- Number of properties (New Metadata): 9
+- Number of relationships (Golden Metadata): 2
+- Number of relationships (New Metadata): 2
+- Number of extra properties: 0
+- Number of extra datasets: 0
+- Number of extra relationships: 0
+- Number of missing values: 1
+
+Differences found between correct and incorrect JSON:
+- Property 'order_id' missing in dataset 'ordersheader' of newly generated metadata JSON

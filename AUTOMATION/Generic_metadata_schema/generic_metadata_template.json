@@ -1,0 +1,79 @@
+{
+    "name": {
+        "name": "{{schema_name}}",
+        "dataCatalogName": "{{schema_dataCatalogName}}"
+    },
+    "dataSets": [
+        {
+            "name": {
+                "name": "{{dataset_name_1}}",
+                "dataCatalogName": "{{dataset_dataCatalogName_1}}"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "{{field_name_1}}",
+                        "dataCatalogName": "{{field_dataCatalogName_1}}"
+                    },
+                    "type": "{{field_type_1}}",
+                    "nullable": "{{field_nullable_1}}",
+                    "primaryKey": "{{field_primaryKey_1}}",
+                    "uniqueKey": "{{field_uniqueKey_1}}",
+                    "compositeKey": null,
+                    "compositeKeyColumns": null
+                }
+            ],
+            "dataSetRelationShips": []
+        },
+        {
+            "name": {
+                "name": "{{dataset_name_2}}",
+                "dataCatalogName": "{{dataset_dataCatalogName_2}}"
+            },
+            "type": null,
+            "properties": [
+                {
+                    "name": {
+                        "name": "{{field_name_2}}",
+                        "dataCatalogName": "{{field_dataCatalogName_2}}"
+                    },
+                    "type": "{{field_type_2}}",
+                    "nullable": "{{field_nullable_2}}",
+                    "primaryKey": "{{field_primaryKey_2}}",
+                    "uniqueKey": "{{field_uniqueKey_2}}",
+                    "compositeKey": "{{field_compositeKey_2}}",
+                    "compositeKeyColumns": "{{field_compositeKeyColumns_2}}"
+                }
+            ],
+            "dataSetRelationShips": [
+                {
+                    "relationshipName": {
+                        "name": "{{relationship_name}}",
+                        "dataCatalogName": "{{relationship_dataCatalogName}}"
+                    },
+                    "sourceDataset": {
+                        "name": "{{source_dataset_name}}",
+                        "dataCatalogName": "{{source_dataset_dataCatalogName}}"
+                    },
+                    "targetDataset": {
+                        "name": "{{target_dataset_name}}",
+                        "dataCatalogName": "{{target_dataset_dataCatalogName}}"
+                    },
+                    "sourceFields": [
+                        {
+                            "name": "{{source_field_name}}",
+                            "dataCatalogName": "{{source_field_dataCatalogName}}"
+                        }
+                    ],
+                    "targetFields": [
+                        {
+                            "name": "{{target_field_name}}",
+                            "dataCatalogName": "{{target_field_dataCatalogName}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

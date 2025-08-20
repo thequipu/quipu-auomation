@@ -1,0 +1,26 @@
+Entity 360 Path Validation Report
+----------------------------------------
+PathId: dangling-path-1111
+  Total Nodes       : 1
+  Total Edges       : 0
+  Connected         : False
+  Dangling          : True
+  Dangling Nodes    : ['urn:li:dataset:postgres:e360_test_1_public']
+
+PathId: b96aee8b-0f32-49e4-aa1e-af2de4699147
+  Total Nodes       : 4
+  Total Edges       : 4
+  Connected         : True
+  Dangling          : False
+
+PathId: 7760dee7-d25a-423c-831d-72cbf5bbdee1
+  Total Nodes       : 4
+  Total Edges       : 4
+  Connected         : True
+  Dangling          : False
+
+Summary
+--------------------
+Total Paths   : 3
+Connected     : 2
+Dangling      : 1

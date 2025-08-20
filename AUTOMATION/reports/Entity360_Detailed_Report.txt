@@ -1,0 +1,22 @@
+Entity 360 Path Validation Report
+----------------------------------------
+PathId: 7760dee7-d25a-423c-831d-72cbf5bbdee1
+  Total Nodes     : 4
+  Total Edges     : 4
+  Fully Connected : True
+  Issues:
+    - Relationship has_node_property not found in Link (http://e360test1Node#tablec->http://e360test1NodeProperty#b_id)
+    - Relationship has_node_relationship not found in Link (http://e360test1Node#tablec->http://e360test1NodeRelationship#b_id)
+    - Relationship b_id not found in Link (http://e360test1NodeRelationship#b_id->http://e360test1Node#tableb)
+    - Relationship has_node_property not found in Link (http://e360test1Node#tableb->http://e360test1NodeProperty#b_id)
+
+PathId: b96aee8b-0f32-49e4-aa1e-af2de4699147
+  Total Nodes     : 4
+  Total Edges     : 4
+  Fully Connected : False
+  Issues:
+    - Relationship has_node_property not found in Link (http://e360test1Node#tablea->http://e360test1NodeProperty#a_id)
+    - Relationship has_node_property not found in Link (http://e360test1Node#tableb->http://e360test1NodeProperty#a_id)
+    - Relationship has_node_relationship not found in Link (http://e360test1Node#tableb->http://e360test1NodeRelationship#a_id)
+    - Relationship a_id not found in Link (http://e360test1NodeRelationship#a_id->http://e360test1Node#tablea)
+
