@@ -6,13 +6,13 @@
             "label": "e360_test_1_public",
             "uri": "urn:li:dataset:postgres:e360_test_1_public",
             "dataSourceID": 2534,
-            "identity": "f97064ee-8aff-44f1-9c28-399fed53d70e"
+            "identity": "c8e7630a-cc31-4c9a-a470-62f4e5f5d95e"
         },
         {
             "id": "urn:li:dataset:postgres:e360_test_1:public:dataset:tablea",
             "node_type": "table",
             "label": "tablea",
-            "identity": "6ef79973-4ffe-45d0-922d-2a3cce8fcbc6"
+            "identity": "abeb6bbe-fbbd-41ef-8d11-6a3e4bff5d17"
         },
         {
             "id": "urn:li:dataset:postgres:e360_test_1:public:dataset:tablea:a_id",
@@ -24,7 +24,7 @@
             "unique_key": false,
             "foreign_key": false,
             "composite_key": null,
-            "identity": "033d59a0-fa2a-46b6-80de-5faa1dbf3210"
+            "identity": "4fde77a4-7a82-43a0-bf9b-e884c6168655"
         },
         {
             "id": "urn:li:dataset:postgres:e360_test_1:public:dataset:tablea:a_name",
@@ -36,13 +36,13 @@
             "unique_key": false,
             "foreign_key": false,
             "composite_key": null,
-            "identity": "2584976e-0c65-4217-9930-2d22e8da8a24"
+            "identity": "1ca75199-c3c9-4307-ad00-f5759a2ce0b4"
         },
         {
             "id": "urn:li:dataset:postgres:e360_test_1:public:dataset:tableb",
             "node_type": "table",
             "label": "tableb",
-            "identity": "71024f1e-275d-4bf0-8d25-3d39c515e57c"
+            "identity": "8dc777eb-7fd3-4080-a1b0-4a24ca8547c6"
         },
         {
             "id": "urn:li:dataset:postgres:e360_test_1:public:dataset:tableb:b_id",
@@ -54,7 +54,7 @@
             "unique_key": false,
             "foreign_key": false,
             "composite_key": null,
-            "identity": "876c5138-320a-4c4c-8aa5-8d76cca520aa"
+            "identity": "7944815a-84fc-43a9-982e-5db288fd5be3"
         },
         {
             "id": "urn:li:dataset:postgres:e360_test_1:public:dataset:tableb:a_id",
@@ -66,7 +66,7 @@
             "unique_key": false,
             "foreign_key": false,
             "composite_key": null,
-            "identity": "e60ad6a8-a7d0-4016-b833-942d6e611444"
+            "identity": "e3d35feb-9a50-4a5f-bb80-13374d7fbb33"
         },
         {
             "id": "urn:li:dataset:postgres:e360_test_1:public:dataset:tableb:b_name",
@@ -78,13 +78,13 @@
             "unique_key": false,
             "foreign_key": false,
             "composite_key": null,
-            "identity": "f19d690b-ef1f-475e-86db-d39179fe0b56"
+            "identity": "b32e8d75-b2ce-468a-9d5c-0ac7e190d797"
         },
         {
             "id": "urn:li:dataset:postgres:e360_test_1:public:dataset:tablec",
             "node_type": "table",
             "label": "tablec",
-            "identity": "06f8bee5-a654-4596-9e02-214b08c0c456"
+            "identity": "c0d70091-eb5f-42e4-894a-288f27c9dcb0"
         },
         {
             "id": "urn:li:dataset:postgres:e360_test_1:public:dataset:tablec:c_id",
@@ -96,7 +96,7 @@
             "unique_key": false,
             "foreign_key": false,
             "composite_key": null,
-            "identity": "762c2c7c-f56d-4b6d-b9a3-571f4a65a6b5"
+            "identity": "4366bb58-45af-4d87-9a31-1444d54d0cc8"
         },
         {
             "id": "urn:li:dataset:postgres:e360_test_1:public:dataset:tablec:b_id",
@@ -108,7 +108,7 @@
             "unique_key": false,
             "foreign_key": false,
             "composite_key": null,
-            "identity": "7539603a-9959-48d8-b114-d8dc63eb8575"
+            "identity": "28772c35-ecb8-4899-8968-b2b824839010"
         },
         {
             "id": "urn:li:dataset:postgres:e360_test_1:public:dataset:tablec:c_name",
@@ -120,7 +120,7 @@
             "unique_key": false,
             "foreign_key": false,
             "composite_key": null,
-            "identity": "3ceb8c1c-f293-4ce0-8f78-b71b24baa572"
+            "identity": "874d637c-d209-4850-acc1-4f2bec8121bb"
         },
         {
             "id": "http://e360test1Node#tablec",
@@ -128,9 +128,9 @@
             "label": "tablec",
             "named_entity": true,
             "uri": "http://e360test1Node#tablec",
-            "identity": "c1a8e040-8324-48d8-9b7c-ce5d48eb11d1",
+            "identity": "c542d0f8-51ca-4718-98e4-b50432dd4637",
             "pathIds": [
-                "7760dee7-d25a-423c-831d-72cbf5bbdee1"
+                "889f84b2-f43c-4a81-8ce2-dbeeaa2019e4"
             ]
         },
         {
@@ -143,7 +143,7 @@
             "alternate_label": false,
             "primary_key": false,
             "unique_key": false,
-            "identity": "5063300d-7cfc-4312-b0ba-c5d854d8a66a"
+            "identity": "a6c39145-fb05-4b51-8e6a-438bcc7da0a3"
         },
         {
             "id": "http://e360test1NodeProperty#b_id",
@@ -155,7 +155,7 @@
             "alternate_label": false,
             "primary_key": false,
             "unique_key": false,
-            "identity": "d7523fd9-ff88-4071-91a6-30d65fe61a5d"
+            "identity": "6659f762-8d9b-41f6-bddb-098b4ddd8cbd"
         },
         {
             "id": "http://e360test1NodeProperty#c_name",
@@ -167,14 +167,14 @@
             "alternate_label": false,
             "primary_key": false,
             "unique_key": false,
-            "identity": "e422fef1-6271-4562-a587-ccce19112d60"
+            "identity": "13026427-3c96-4788-ba5e-e58ac4ee3a05"
         },
         {
             "id": "http://e360test1NodeRelationship#b_id",
             "node_type": "Node Relationship",
             "label": "b_id",
             "uri": "http://e360test1NodeRelationship#b_id",
-            "identity": "23bcd420-1168-44a1-b84c-57e052780b48",
+            "identity": "c215610f-3f1d-4aa2-9f4e-5c6c22c0b551",
             "columns": [
                 {
                     "sourceColumn": "urn:li:dataset:postgres:e360_test_1:public:dataset:tablec:b_id",
@@ -183,7 +183,7 @@
                 }
             ],
             "pathIds": [
-                "7760dee7-d25a-423c-831d-72cbf5bbdee1"
+                "889f84b2-f43c-4a81-8ce2-dbeeaa2019e4"
             ]
         },
         {
@@ -192,10 +192,8 @@
             "label": "tablea",
             "named_entity": false,
             "uri": "http://e360test1Node#tablea",
-            "identity": "7287659c-bb0a-4836-afb5-a32b7f7e8b87",
-            "pathIds": [
-                "b96aee8b-0f32-49e4-aa1e-af2de4699147"
-            ]
+            "identity": "cd8a33c4-58a9-48af-8f98-3b65d6d803b4",
+            "pathIds": []
         },
         {
             "id": "http://e360test1NodeProperty#a_id",
@@ -207,7 +205,7 @@
             "alternate_label": false,
             "primary_key": false,
             "unique_key": false,
-            "identity": "3d97f73b-f5dc-4898-b766-e901df9fadfd"
+            "identity": "de96ff6b-cd69-4605-a3e3-ee6353f3ae31"
         },
         {
             "id": "http://e360test1NodeProperty#a_name",
@@ -219,18 +217,17 @@
             "alternate_label": false,
             "primary_key": false,
             "unique_key": false,
-            "identity": "1d6e3b45-6afb-4a18-a49a-29fe924b4d99"
+            "identity": "570ee6c5-ea1d-40af-aa52-70b8e8c55cac"
         },
         {
             "id": "http://e360test1Node#tableb",
             "node_type": "Node",
             "label": "tableb",
-            "named_entity": true,
+            "named_entity": false,
             "uri": "http://e360test1Node#tableb",
-            "identity": "615993d5-7555-4b40-bf84-94c7e068ecbc",
+            "identity": "d9922740-008e-4dcc-a327-2eddfbe3014e",
             "pathIds": [
-                "7760dee7-d25a-423c-831d-72cbf5bbdee1",
-                "b96aee8b-0f32-49e4-aa1e-af2de4699147"
+                "889f84b2-f43c-4a81-8ce2-dbeeaa2019e4"
             ]
         },
         {
@@ -243,14 +240,14 @@
             "alternate_label": false,
             "primary_key": false,
             "unique_key": false,
-            "identity": "b4855a4c-f2ab-4063-b7bf-f6a3734bcd70"
+            "identity": "19f86f3a-631c-4ec9-9315-8a7ed37146c9"
         },
         {
             "id": "http://e360test1NodeRelationship#a_id",
             "node_type": "Node Relationship",
             "label": "a_id",
             "uri": "http://e360test1NodeRelationship#a_id",
-            "identity": "ca6ca235-1251-42b8-a599-59bac67c9390",
+            "identity": "8f91b0cd-3b67-42ec-b05e-304c111cbfb0",
             "columns": [
                 {
                     "sourceColumn": "urn:li:dataset:postgres:e360_test_1:public:dataset:tableb:a_id",
@@ -258,9 +255,7 @@
                     "targetNodeProperty": "http://e360test1NodeProperty#a_id"
                 }
             ],
-            "pathIds": [
-                "b96aee8b-0f32-49e4-aa1e-af2de4699147"
-            ]
+            "pathIds": []
         }
     ],
     "links": [
@@ -274,7 +269,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "51dac183-efc7-41f6-8418-5e25ccc635f8",
+            "identity": "c402f442-961d-4b77-8631-722733e3c816",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -291,7 +286,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "3d44c293-70f3-46b9-a25e-2328b140ed3c",
+            "identity": "595e2242-71cb-478f-9bf7-15fa1ea37a1a",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -308,7 +303,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "8c6de9e5-e3ae-4d61-91ea-acb4e9c70950",
+            "identity": "f32dd9ae-5ed2-429c-a742-0f262ae071e3",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -325,7 +320,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "ad66c02c-0169-46e0-af89-c906cb9bd6c5",
+            "identity": "c41ff040-285a-42f4-ba53-4388538b8a18",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -342,7 +337,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "8a339e5b-841a-478d-ba6b-2d420df79a38",
+            "identity": "309931db-c230-4eb1-ba4d-9fd441fd741e",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -359,7 +354,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "188a0471-0d89-43de-90af-de69a915ceb7",
+            "identity": "f9f3101b-0563-4954-9ddb-42508b341a24",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -376,7 +371,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "d4d6a9cc-d971-4dd6-b0e3-abfce24f10c9",
+            "identity": "a8e7bf8f-cb5c-4d36-8d9f-3c96257fb3d6",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -393,7 +388,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "43ba9e0b-c3d1-40ef-bd84-f3473a540a23",
+            "identity": "6f793cba-9ca3-44e0-80e8-f52f14aaa6b7",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -410,7 +405,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "b9c6831b-73cc-4c14-bd74-1c3fcb8b24b5",
+            "identity": "fc4e6fd0-c6dd-480d-a73f-e2d0ba218cf1",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -427,7 +422,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "ccacbbdc-c907-4376-821e-05ed26007f35",
+            "identity": "12127c02-a604-43d4-826a-dd12a64d3350",
             "target_node_uri": "http://e360test1Node#tablea",
             "pathIds": [],
             "metrics": {},
@@ -444,7 +439,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "661bab99-e1ae-46e4-a19e-8ec8c8437945",
+            "identity": "cc7375e6-4567-48ff-aab3-4cdecb69c9bd",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -461,7 +456,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "880b02a1-b595-47b9-b981-440df9e6652b",
+            "identity": "44a2d761-27e9-4687-b583-5bdacdf3cd2e",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -478,7 +473,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "bf7b4f3b-78e5-4ed1-9882-dd62c5cb7d5c",
+            "identity": "83f9e3f0-84b5-49b9-98d3-96bef44f3320",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -495,7 +490,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "a45a437a-4f87-4a59-9439-c57485e1803c",
+            "identity": "ace813a6-6013-4e00-a089-964e1404d1cf",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -512,7 +507,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "f3d22035-8be7-447f-8387-5d1d4bf1602f",
+            "identity": "e8d8bf7a-26af-4a49-ba7b-5ff79ec14e6a",
             "target_node_uri": "http://e360test1Node#tableb",
             "pathIds": [],
             "metrics": {},
@@ -529,7 +524,7 @@
             "altLabel": false,
             "primaryKey": true,
             "uniqueKey": false,
-            "identity": "bdb8b25b-5c8e-4093-9ba4-77541cebb73e",
+            "identity": "33e02d9c-d43a-4e13-b674-968787944a00",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -546,10 +541,10 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "f5e43c68-b0cb-41b2-b87f-7fa6859de653",
+            "identity": "01f06c12-db63-4537-a57e-a48f9fe16041",
             "target_node_uri": "",
             "pathIds": [
-                "7760dee7-d25a-423c-831d-72cbf5bbdee1"
+                "889f84b2-f43c-4a81-8ce2-dbeeaa2019e4"
             ],
             "metrics": {},
             "target_column": "",
@@ -565,7 +560,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "017a658b-6cfc-4372-a930-a36a163bf4ff",
+            "identity": "e2000dd3-8b43-42f8-bbfa-1483a0d76bf6",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -582,10 +577,10 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "ea71ab69-766c-46ba-b06b-dad32d160e9a",
+            "identity": "22a5458d-4945-4b42-b418-0e9f8551352d",
             "target_node_uri": "",
             "pathIds": [
-                "7760dee7-d25a-423c-831d-72cbf5bbdee1"
+                "889f84b2-f43c-4a81-8ce2-dbeeaa2019e4"
             ],
             "metrics": {},
             "target_column": "",
@@ -601,7 +596,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "82f83f72-26c9-4ee0-b87f-28a7f6e8d318",
+            "identity": "7a004d8d-d071-417c-bbf3-42202cf48317",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -618,7 +613,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "21cefa71-1836-40f4-97c6-531215e26015",
+            "identity": "bb7fcc02-de27-43e1-8701-d6fe52e19d91",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -635,7 +630,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "9f62d237-4613-4f19-9fb9-e57b4ad2fa3e",
+            "identity": "fdfccfeb-c894-4ad8-a0b9-ebd116012efc",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -652,7 +647,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "5a0e3711-ddf2-4ac6-9cde-9dffe60be04d",
+            "identity": "717bf270-7f79-47e3-b3c9-32351edc8830",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -669,7 +664,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "95287848-a994-4311-9fe1-ebde161cdcf6",
+            "identity": "fbfb27ea-5df2-4bc6-a92f-5ebac05a04b5",
             "target_node_uri": "http://e360test1Node#tableb",
             "pathIds": [],
             "metrics": {},
@@ -686,10 +681,10 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "804359e5-49a2-43d9-8880-8662c87ab18a",
+            "identity": "835b14ee-1601-468a-86eb-de893d290516",
             "target_node_uri": "",
             "pathIds": [
-                "7760dee7-d25a-423c-831d-72cbf5bbdee1"
+                "889f84b2-f43c-4a81-8ce2-dbeeaa2019e4"
             ],
             "metrics": {},
             "target_column": "",
@@ -705,11 +700,9 @@
             "altLabel": false,
             "primaryKey": true,
             "uniqueKey": false,
-            "identity": "aa2f26be-376b-458f-a041-a92c6a8828a9",
+            "identity": "712bb017-2607-469f-81f6-1dbd4cfc1c31",
             "target_node_uri": "",
-            "pathIds": [
-                "b96aee8b-0f32-49e4-aa1e-af2de4699147"
-            ],
+            "pathIds": [],
             "metrics": {},
             "target_column": "",
             "dashed": false
@@ -724,7 +717,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "63bd4147-c27b-413a-8903-f2defe8d0824",
+            "identity": "51698305-9ba1-439c-92fd-826f0af89c61",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -741,7 +734,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "b90c7571-94d5-4fb7-9ccb-a80b347ee677",
+            "identity": "bcf30dc1-0375-486e-9ef6-9af3d4f5c8fc",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -758,7 +751,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "7377a8e0-4cc0-4b88-910b-c8e2e44c9471",
+            "identity": "4dfcf52d-aa2b-455a-9f20-44a3b5374915",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -775,7 +768,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "2ff6fafd-f350-4c94-9f61-96780c66056f",
+            "identity": "71a39986-50f2-4538-a9b5-7e98ad944951",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -792,11 +785,9 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "50b8231d-9be5-401f-982d-cc14d3bd3590",
+            "identity": "e96cb056-9442-44f4-8a2c-57e699e910f8",
             "target_node_uri": "",
-            "pathIds": [
-                "b96aee8b-0f32-49e4-aa1e-af2de4699147"
-            ],
+            "pathIds": [],
             "metrics": {},
             "target_column": "",
             "dashed": false
@@ -811,7 +802,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "77e26243-0a64-4992-9c7e-a1bf74644705",
+            "identity": "311758d3-2ac7-4017-a7b4-ba6bae0040f9",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -828,10 +819,10 @@
             "altLabel": false,
             "primaryKey": true,
             "uniqueKey": false,
-            "identity": "198fb56a-63d7-43f5-8a61-1f9644a7aab4",
+            "identity": "e61c94b0-b856-4a21-bdab-1845f54fbb94",
             "target_node_uri": "",
             "pathIds": [
-                "7760dee7-d25a-423c-831d-72cbf5bbdee1"
+                "889f84b2-f43c-4a81-8ce2-dbeeaa2019e4"
             ],
             "metrics": {},
             "target_column": "",
@@ -847,11 +838,9 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "b60d45fd-d7f3-4c78-aef5-1aee3abc59b2",
+            "identity": "35015b22-6faa-4935-a8bf-fae3b7ab79db",
             "target_node_uri": "",
-            "pathIds": [
-                "b96aee8b-0f32-49e4-aa1e-af2de4699147"
-            ],
+            "pathIds": [],
             "metrics": {},
             "target_column": "",
             "dashed": false
@@ -866,7 +855,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "bb0e47ba-a5c7-49f1-aa08-933faab65250",
+            "identity": "f1931a94-6c48-433a-bd38-aae570283816",
             "target_node_uri": "",
             "pathIds": [],
             "metrics": {},
@@ -883,7 +872,7 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "0a3385d9-0987-4a9e-a938-4e649e3184bb",
+            "identity": "cfb8604f-b7d9-4161-9f14-7ee92cc649b6",
             "target_node_uri": "http://e360test1Node#tablea",
             "pathIds": [],
             "metrics": {},
@@ -900,11 +889,9 @@
             "altLabel": false,
             "primaryKey": false,
             "uniqueKey": false,
-            "identity": "8f6606dd-c50b-4292-b1b1-0a2a475e43c6",
+            "identity": "be83dac0-08dd-49bd-bc29-94daed790f46",
             "target_node_uri": "",
-            "pathIds": [
-                "b96aee8b-0f32-49e4-aa1e-af2de4699147"
-            ],
+            "pathIds": [],
             "metrics": {},
             "target_column": "",
             "dashed": false
