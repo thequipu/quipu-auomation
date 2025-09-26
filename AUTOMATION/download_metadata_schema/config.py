@@ -16,12 +16,6 @@ CONFIG = {
     'download_path': os.getenv('DOWNLOAD_PATH', '../downloads'),
     's3_bucket': os.getenv('S3_BUCKET'),
     's3_key': os.getenv('S3_KEY'),
-    # 'metadata_template_folder_file': os.getenv('METADATA_TEMPLATE_FOLDER_FILE'),
-    # 'schema_name': os.getenv('SCHEMA_NAME'),
-    # 'platform': os.getenv('PLATFORM'),
-    # 'database': os.getenv('DATABASE'),
-    # 'schema': os.getenv('SCHEMA'),
-    # 'sql_queries': os.getenv('SQL_QUERIES')
 }
 
 # Validate required configuration
@@ -32,12 +26,6 @@ required_keys = [
     'METADATA_BUCKET_NAME', 
     'SCHEMA_BUCKET_NAME', 
     'METADATA_FILE_KEY',
-    # 'METADATA_TEMPLATE_FOLDER_FILE',
-    # 'SCHEMA_NAME',
-    # 'PLATFORM',
-    # 'DATABASE',
-    # 'SCHEMA',
-    # 'SQL_QUERIES'
 ]
 missing_keys = [key for key in required_keys if not os.getenv(key)]
 if missing_keys:
