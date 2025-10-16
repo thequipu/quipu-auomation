@@ -27,7 +27,6 @@ class KnowledgeGraphPage:
     def open(self):
         self.wait.until(EC.element_to_be_clickable(self.hamburger)).click()
         self.wait.until(EC.element_to_be_clickable(self.kg_menu)).click()
-        # Wait for either labels or relationships to be present
         self.wait.until(
             EC.any_of(
                 EC.presence_of_element_located(self.labels_css),
@@ -35,7 +34,7 @@ class KnowledgeGraphPage:
             )
         )
 
-    # -------- LABELS (unchanged) ----------
+    # -------- LABELS ----------
     def get_labels_with_tooltips(self):
         elems = self.driver.find_elements(*self.labels_css)
         data = []
@@ -59,9 +58,8 @@ class KnowledgeGraphPage:
         with open(filepath, newline="", encoding="utf-8") as f:
             return [row for row in csv.DictReader(f)]
 
-    # -------- RELATIONSHIPS (new) ----------
+    # -------- RELATIONSHIPS ----------
     def get_relationships_with_tooltips(self):
-        # If the section isn’t present, return an empty list gracefully
         elems = self.driver.find_elements(*self.relationships_xpath)
         data = []
         for el in elems:

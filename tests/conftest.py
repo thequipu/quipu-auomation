@@ -1,19 +1,19 @@
-import json
 import pytest
-from drivers.driver_factory import DriverFactory
-from pages.login_page import LoginPage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+from drivers.driver_factory import DriverFactory
+from pages.login_page import LoginPage
+from utils.screenshot import take_screenshot
+
 @pytest.fixture(scope="session")
 def config():
-    with open("config/config.json") as f:
-        return json.load(f)
+    return DriverFactory.load_config("config/config.json")
 
 @pytest.fixture(scope="function")
 def driver():
-    driver,wait = DriverFactory.get_driver()
+    driver, wait = DriverFactory.get_driver()
     yield driver
     driver.quit()
 
@@ -26,6 +26,10 @@ def login(driver, config):
     lp.enter_username(config["username"])
     lp.enter_password(config["password"])
     lp.click_login()
-    # extra safety: ensure post-login element is visible
     WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "fabric-menu")))
-    return driver
+    yield driver
+    # Always capture at end for traceability
+    try:
+        take_screenshot(driver, "end_of_test")
+    except Exception:
+        pass

@@ -8,5 +8,4 @@ def test_login_valid(driver, config):
     lp.enter_username(config["username"])
     lp.enter_password(config["password"])
     lp.click_login()
-
     assert "http" in driver.current_url.lower()

@@ -1,6 +1,11 @@
 {
-    "base_url": "https://app-preprod-1.thequipu.in/login",
-    "tenant": "preprodquipuai1",
-    "username": "narenm",
-    "password": "12!Quipu345"
+  "base_url": "https://app-preprod-1.thequipu.in/login",
+  "tenant": "preprodquipuai1",
+  "username": "narenm",
+  "password": "12!Quipu345",
+  "browser": "chrome",
+  "headless": false,
+  "remote": false,
+  "remote_url": "",
+  "timeouts": { "implicit": 0, "explicit": 20, "page_load": 60 }
 }

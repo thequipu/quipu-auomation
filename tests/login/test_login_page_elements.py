@@ -5,11 +5,8 @@ from selenium.webdriver.support import expected_conditions as EC
 def test_login_page_elements(driver, config):
     driver.get(config["base_url"])
     wait = WebDriverWait(driver, 10)
-
     assert wait.until(EC.presence_of_element_located((By.ID, "tenantId")))
     assert wait.until(EC.presence_of_element_located((By.ID, "tenant-btn")))
-
-    # After proceed, fields should appear
     driver.find_element(By.ID, "tenantId").send_keys(config["tenant"])
     driver.find_element(By.ID, "tenant-btn").click()
     assert wait.until(EC.presence_of_element_located((By.ID, "username")))

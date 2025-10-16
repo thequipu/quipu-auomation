@@ -1,2 +1,0 @@
-from .metadata_comparator import MetadataComparator
-from .schema_comparator import SchemaComparator

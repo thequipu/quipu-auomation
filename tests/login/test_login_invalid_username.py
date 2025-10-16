@@ -8,7 +8,5 @@ def test_login_invalid_username(driver, config):
     lp.enter_username("wrong_user")
     lp.enter_password(config["password"])
     lp.click_login()
-
-    # Soft validation: page shows error text or stays on login
     page = driver.page_source.lower()
     assert "invalid" in page or "incorrect" in page or "error" in page

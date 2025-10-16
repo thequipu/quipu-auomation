@@ -1,10 +1,11 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 class LoginPage:
-    def __init__(self, driver, wait):
+    def __init__(self, driver, wait=None, timeout=20):
         self.driver = driver
-        self.wait = wait
+        self.wait = wait or WebDriverWait(driver, timeout)
 
     def open(self, url):
         self.driver.get(url)
