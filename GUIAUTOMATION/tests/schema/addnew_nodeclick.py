@@ -1,7 +1,6 @@
 import os, time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.devtools.v137.cache_storage import delete_entry
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -15,7 +14,7 @@ from selenium.common.exceptions import TimeoutException
 driver = webdriver.Chrome()
 wait = WebDriverWait(driver, 20)
 
-driver.get("http://localhost:4200/login")
+driver.get("https://app-preprod-1.thequipu.in/")
 driver.maximize_window()
 
 tenant_input = wait.until(EC.presence_of_element_located((By.ID, "tenantId")))

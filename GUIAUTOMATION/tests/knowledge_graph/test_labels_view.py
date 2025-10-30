@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 driver = webdriver.Chrome()
-driver.get("http://localhost:4200/login")
+driver.get("https://app-preprod-1.thequipu.in/login")
 driver.maximize_window()
 
 wait = WebDriverWait(driver, 20)

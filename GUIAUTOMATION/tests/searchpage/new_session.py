@@ -1,7 +1,7 @@
 import os, time
 
-from click import option
-from lxml.html.builder import OPTION
+
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys

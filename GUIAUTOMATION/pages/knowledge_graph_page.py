@@ -1,3 +1,4 @@
+from selenium.webdriver.common.by import By
 # pages/knowledge_graph_page.py
 import csv
 from selenium.webdriver.common.by import By
@@ -83,3 +84,12 @@ class KnowledgeGraphPage:
     def read_relationships_from_csv(self, filepath):
         with open(filepath, newline="", encoding="utf-8") as f:
             return [row for row in csv.DictReader(f)]
+
+class KnowledgeGraphPage:
+    def __init__(self, driver):
+        self.driver = driver
+
+    def labels(self):
+        # adjust selector when you know label element
+        return [el.text for el in self.driver.find_elements(By.CSS_SELECTOR, ".label-class")]
+

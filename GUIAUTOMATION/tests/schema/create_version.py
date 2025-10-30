@@ -12,7 +12,7 @@ from selenium.common.exceptions import TimeoutException
 driver = webdriver.Chrome()
 wait = WebDriverWait(driver, 20)
 
-driver.get("http://localhost:4200/login")
+driver.get("https://app-preprod-1.thequipu.in/")
 driver.maximize_window()
 
 tenant_input = wait.until(EC.presence_of_element_located((By.ID, "tenantId")))
@@ -46,8 +46,8 @@ create_version = wait.until(EC.element_to_be_clickable((By.ID,"mat-tab-label-0-1
 create_version.click()
 time.sleep(2)
 #============scehma=======================
-select_schema = wait.until(EC.element_to_be_clickable((By.ID,"select-schema")))
-select_schema.click();time.sleep(1)
+select_schema_dropdown= wait.until(EC.element_to_be_clickable((By.ID,"mat-select-16")))
+select_schema_dropdown.click();time.sleep(1)
 element_select = wait.until(EC.element_to_be_clickable((By.ID,"schema-option-200MDATA")))
 element_select.click();time.sleep(1)
 #------------------verion----------------------------

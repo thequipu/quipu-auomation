@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 driver = webdriver.Chrome()
 wait = WebDriverWait(driver, 20)
 
-driver.get("http://localhost:4200/login")
+driver.get("https://app-preprod-1.thequipu.in/login")
 driver.maximize_window()
 
 tenant_input = wait.until(EC.presence_of_element_located((By.ID, "tenantId")))
