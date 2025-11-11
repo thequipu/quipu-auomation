@@ -1,0 +1,13 @@
+{
+  "base_url": "https://app-preprod-1.thequipu.in/",
+  "tenant": "preprodquipuai1",
+  "username": "narenm",
+  "password": "12!Quipu345",
+  "browser": "chrome",
+  "headless": false,
+  "headless_resolution": "1920,1080",
+  "disable_gpu": true,
+  "accept_insecure_certs": true,
+  "use_fake_ui_for_media_stream": true,
+  "allow_camera_mic": true
+}
